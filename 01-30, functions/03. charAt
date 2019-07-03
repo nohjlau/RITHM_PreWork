@@ -1,0 +1,8 @@
+ function charAt(s, i) {
+   if(s[i] == null)
+    return "";
+    
+   return s[i];
+ }
+ 
+ charAt("awesome",2);
