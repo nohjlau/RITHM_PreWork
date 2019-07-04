@@ -7,7 +7,7 @@ Do not use the built in Array.lastIndexOf() function!
 */
 
 function lastIndexOf(arr, n) {
-  for (i = arr.length; i > 0; i--) {
+  for (i = arr.length; i >= 0; i--) {
     if (arr[i] == n)
       return i;
   }
