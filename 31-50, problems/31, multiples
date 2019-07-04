@@ -7,6 +7,7 @@ Assume that x is a positive integer.
 
 Credit - https://www.codewars.com/kata/return-the-first-m-multiples-of-n/train/javascript
 */
+
 function multiples(x, n) {
   var set = [];
   for (i =1; i <= n; i++) {
