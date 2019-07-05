@@ -25,3 +25,6 @@ function pop(arr) {
     arr.length = arr.length-1;
     return rem;
   }
+
+
+/* Solution Notes -- Decreasing array length automatically shrinks array */
