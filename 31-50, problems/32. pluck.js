@@ -3,12 +3,10 @@
 
 Instructions from your teacher:
 Write a function called pluck, which takes an array of objects and the name of a key.
-
 The function should return an array containing the value associated with that key for each object, or undefined if that key is not present in the object.
-
 //When testing, you can use JSON.stringify to convert object data into readable data.
+
 Examples:
- 
 pluck([
   { name: "Tim" }, { name: "Matt" }, { name: "Elie" }],
  'name'

@@ -1,8 +1,8 @@
 /*
+012 - push.js
+
 Write a function called push which accepts two parameters, an array and any value. 
-
 The function should add the value to the end of the array and then return the new length of the array.
-
 Do not use the built in Array.push() function!
 
 Examples:
