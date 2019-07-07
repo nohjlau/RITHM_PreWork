@@ -25,3 +25,7 @@ function reverse(arr) {
   }
   return arr;
 }
+
+/* Solution Notes
+Math.floor when finding the midpoint for swapping purposes.
+*/
