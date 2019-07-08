@@ -11,7 +11,7 @@ max([-1, 6, 3, 2.2, -10, -4]); // 6
 */
 
 function max(arr) {
-  let largest = 0;
+  let largest = arr[0];
   for (i = 0; i < arr.length; i++) {
     if (arr[i] > largest)
       largest = arr[i];
