@@ -19,12 +19,11 @@ or the spread operator
 to handle a variable of parameters.
 */
 
-function concat(arr, a, b, c) {
-  const max_args = 3;
+function concat() {
   const start_args = 1;
   let num_args = 0;
-  let new_arr = arr;
-  for(i = 0; i <= max_args; i++) {
+  let new_arr = arguments[0];
+  for(i = 0; i <= arguments.length; i++) {
     if (arguments[i] !== undefined)
       num_args++;
   }
@@ -36,3 +35,10 @@ function concat(arr, a, b, c) {
   }
   return new_arr;
 }
+
+
+/* Solution Notes:
+A more elegant solution to the one I've written is to use a nested for-loop so that keeping track of the num_args isn't necessary.
+The consequence of doing that is that your nested for-loop has an O(n^2) versus two for-loops, which has O(n). Though, that's not too important here.
+There are two alternative solutions using a for-of loop and a ForEach loop
+*/
