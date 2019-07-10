@@ -19,3 +19,7 @@ function countNumbers(arr) {
     }
     return counter;
 }
+
+/* Solution Notes
+Instead of using isNaN(), you could've used parseInt() as a catch all and simplified your if statement.
+*/
