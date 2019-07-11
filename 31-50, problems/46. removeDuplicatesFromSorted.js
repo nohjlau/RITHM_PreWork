@@ -35,6 +35,7 @@ removeDuplicatesFromSorted = arr => {
 /* Solution Notes
 The model solution is a much more elegant solution than what I've done as it utilizes less memory
 space as the sorted array is iterated through and determined if the count is more than 2 for any given number.
+I used a hash to store all the values and then iterate through afterward to check if there are more than 2.
 
 function removeDuplicatesFromSorted(sortedArr) {
   var len = 0;
