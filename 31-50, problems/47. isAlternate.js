@@ -13,36 +13,35 @@ Credit - https://www.codewars.com/kata/are-we-alternate
 */
 
 isAlt = str => {
-    let vowels = {
-      'a':1,
-      'e':1,
-      'i':1,
-      'o':1,
-      'u':1
-    }
-    let isVowel = false;
-    
-    for(let i=0; i < str.length; i += 2) { //even
-      //console.log(str[i]);
-      for(key in vowels) {
-        if(key == str[i]){
-          
-          isVowel = true;
-        }
-      }
-      if(isVowel === false) //check odd
-         for(key in vowels) {
-        if(key == str[i+1]){
-          
-          isVowel = true;
-        }
-        if(isVowel === false) //if still false, return false;
-          return false;
-      }
+  let vowels = {
+    'a':1,
+    'e':1,
+    'i':1,
+    'o':1,
+    'u':1
+  }
+  let isVowel = false;
+  
+  for(let i=0; i < str.length; i += 2) { //even
+    for(key in vowels) {
+      if(key == str[i] && key != str[i+1]){
         
-      isVowel = false;
+        isVowel = true;
+      }
     }
-    return true;
+    if(isVowel === false) //check odd
+       for(key in vowels) {
+      if(key == str[i+1] && key != str[i+2]){
+        
+        isVowel = true;
+      }
+      if(isVowel === false) //if still false, return false;
+        return false;
+    }
+      
+    isVowel = false;
+  }
+  return true;
 };
   
 
